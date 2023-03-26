@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-LightCyan: hsl(193, 38%, 86%);
+  --color-NeonGreen: hsl(150, 100%, 66%);
+  --color-GrayishBlue: hsl(217, 19%, 38%);
+  --color-DarkGrayishBlue: hsl(217, 19%, 24%);
+  --color-DarkBlue: hsl(218, 23%, 16%);
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+h2{
+  font-weight: 800;
+}
+
+.conteiner{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-DarkBlue);
+}
+
+.conteiner__card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
