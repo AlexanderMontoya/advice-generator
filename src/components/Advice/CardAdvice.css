@@ -1,6 +1,6 @@
 .card__advice{
-    width: 550px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -29,24 +29,16 @@
   
   .card__button{
     position: absolute;
-    cursor: pointer;
     bottom: -35px;
     left: auto;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--color-NeonGreen);
-    border: none;
-    outline: none;
     transition: box-shadow 1s;
   }
   
   .card__button img{
     width: 25px;
-  
   }
   
   .card__button:hover{

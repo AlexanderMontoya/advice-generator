@@ -15,6 +15,7 @@
 body{
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
+  background-color: var(--color-DarkBlue);
 }
 
 h2{
@@ -24,13 +25,138 @@ h2{
 .conteiner{
   width: 100%;
   height: 100vh;
-  background-color: var(--color-DarkBlue);
-}
-
-.conteiner__card{
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+h1{
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  position: absolute;
+  top: 60px;
+}
+
+.conteiner__card{
+  width: 550px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__favorite{
+  position: absolute;
+  right: auto;
+  top: -30px;
+}
+
+.form__favorite__btn{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    font-size: 30px;
+    color: white;
+    transition: box-shadow 1s;
+}
+
+.form__favorite__btn:hover{
+  box-shadow: 0px 0px 30px 0px rgb(255, 0, 0);
+}
+
+.conteiner__favoritos{
+  width: 320px;
+  min-height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  background-color: var(--color-GrayishBlue);
+  padding: 20px;
+  right: 0;
+  top: 0;
+  /*Principalmente Firefox*/
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+
+.conteiner__favoritos.visible{
+  transform: translate(0%);
+}
+
+.conteiner__favoritos .conteiner__favoritos--vacio{
+  color: rgb(211, 108, 108);
+  font-size: 20px;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn__active{
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-DarkGrayishBlue);
+  font-size: 30px;
+  color: white;
+  transition: box-shadow 1s;
+}
+
+.content__btn{
+  width: 30px;
+  height: 30px;
+}
+
+
+.content__cont{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: var(--color-GrayishBlue);
+  border-radius: 50%;
+
+}
+
+.btn__active:hover{
+  box-shadow: 0px 0px 30px 0px var(--color-DarkGrayishBlue);
+}
+
+.conteiner__favoritos::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.conteiner__favoritos::-webkit-scrollbar:vertical {
+  width:1px;
+}
+
+.conteiner__favoritos h2{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  
 }

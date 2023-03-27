@@ -1,9 +1,11 @@
-import ConsultAdvice from './ConsultAdvice'
-
+import ContentAdvice from './ContentAdvice'
+import ContentFavorite from "./ContentFavorite";
 function App() {
   return (
     <main className='conteiner'>
-      <ConsultAdvice/>
+      <h1>Advice Generator</h1>
+      <ContentAdvice/>
+      <ContentFavorite/>
     </main>
   )
 }
